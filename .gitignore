@@ -1,0 +1,27 @@
+@"
+# Python and Virtual Environments
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.env
+
+# Machine Learning Artifacts & Checkpoints
+mlruns/
+mlruns.db
+models/layoutlmv3_finetuned/*
+!models/layoutlmv3_finetuned/.gitkeep
+models/tokenizer/*
+!models/tokenizer/.gitkeep
+
+# Local Data Volumes
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# OS-Specific Files
+.DS_Store
+desktop.ini
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding utf8
